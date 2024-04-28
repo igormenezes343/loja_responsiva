@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: orangered;
+    color: #fff;
+    font-weight: normal;
+}
+header, section h2{
+    font-family: 'Bungee', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#d6d2d2
+}
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+header nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+header nav li a:hover{
+    text-decoration: underline;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section{
+    padding: 24px 0;
+}
+section h2{
+    margin-bottom: 30px;
+    color: orangered;
+    border-bottom: 2px solid ;
+}
+section p{
+    margin-bottom: 8px;
+}
+section .container img{
+    margin-right: 40px;
+    height: 300px;
+}
+#produtos .novidades img{
+    width: 200px;
+    height: 200px;
+    margin: 8px
+    
+}
+.novidades{
+    display: grid;
+    grid-template-columns: repeat(4, 24.26%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+button{
+    background-color: orangered;
+    font-size: 18px;
+    padding: 8px 0;
+    border: none;
+    margin: 8px 8px;
+    width: 200px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(163, 49, 7);
+}
+section h3, p{
+    margin: 8px 8px;
+}
+footer{
+    background-color: orangered;
+    padding: 16px;
+}
+@media screen and (max-width: 640px) {
+    .conteudo{
+        display: block;
+    }
+
+    .container{
+        max-width: 80%;
+    }
+
+    .novidades{
+        display: block;
+    }
+
+    .novidades .novidade{
+        margin-bottom: 32px;
+    }
+
+    #sobre .container img{
+        max-width: 100%;
+        
+    }
+    section .container{
+        display: block;
+        max-width: 100%;
+    }
+    #produtos .novidades img{
+        width: 300px;
+        height: 300px;
+        margin: 8px 8px;
+    }
+    button{
+        width: 300px;
+}
+header nav li{
+    display: flex;
+    font-size: 12px;
+}
+
+}
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 87%;
+        
+    }
+    section .container{
+        display: block;
+        max-width: 100%;
+    }
+    #loja{
+        height: 100%;
+        margin: 0;
+    }
+
+    .novidades{
+    display: grid;
+    grid-template-columns: repeat(2, 45.4%);
+    column-gap: 5%;
+    row-gap: 2%;
+}
+#produtos .novidades img{
+    width: 340px;
+    height: 340px;
+}
+button{
+        width: 340px;}
+}
